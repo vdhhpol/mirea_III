@@ -129,7 +129,7 @@ def report(
         f.write(f"- Слишком много пропусков: **{quality_flags['too_many_missing']}**\n\n")
 
         f.write(f"- Есть постоянные колонки: **{quality_flags['has_constant_columns']}**\n")
-        f.write(f"- Высокая кардинальность категорий: **{quality_flags['has_high_cardinality_categories']}**\n")
+        f.write(f"- Высокая кардинальность категорий: **{quality_flags['has_high_cardinality_categoricals']}**\n")
         f.write(f"- Дубликаты ID: **{quality_flags['has_suspicious_id_duplicates']}**\n")
         f.write(f"- Много нулевых значений: **{quality_flags['has_many_zero_values']}**\n\n")
 
