@@ -1,0 +1,24 @@
+{
+    "ds1": {
+        "best_method": "kmeans",
+        "silhouette": 0.5216395622404242,
+        "davies_bouldin": 0.6853295219054457,
+        "calinski_harabasz": 11786.954622671532
+    },
+    "ds2": {
+        "best_method": "dbscan",
+        "silhouette": 0.5373832388783659,
+        "davies_bouldin": 0.3450932743828966,
+        "calinski_harabasz": 15.515335978514528,
+        "noise_ratio": 0.00025,
+        "n_clusters": 2
+    },
+    "ds3": {
+        "best_method": "dbscan",
+        "silhouette": 0.8121356112341536,
+        "davies_bouldin": 0.24494686691049314,
+        "calinski_harabasz": 3564.021041770512,
+        "noise_ratio": 0.9959333333333333,
+        "n_clusters": 5
+    }
+}
