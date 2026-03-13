@@ -1,0 +1,5 @@
+experiment_id,dataset,seed,model_summary,optimizer,lr,momentum,weight_decay,epochs_trained,best_val_accuracy,best_val_loss
+E1_base,CIFAR10,42,"hidden=[512, 256, 128], activation=relu, dropout=0.0, batchnorm=False",adam,0.001,0.0,0.0,20,0.5424,
+E2_dropout,CIFAR10,42,"hidden=[512, 256, 128], activation=relu, dropout=0.3, batchnorm=False",adam,0.001,0.0,0.0,20,0.5362,
+E3_batchnorm,CIFAR10,42,"hidden=[512, 256, 128], activation=relu, dropout=0.0, batchnorm=True",adam,0.001,0.0,0.0,20,0.5664,
+E4_best+earlystop,CIFAR10,42,"hidden=[512, 256, 128], activation=relu, dropout=0.0, batchnorm=True",adam,0.001,0.0,0.0,15,0.5664,
