@@ -1,0 +1,9 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,SimpleCNN,Adam,0.001,15,0.589,,,,,no augmentations
+C2,classification,STL10,42,SimpleCNN,Adam,0.001,15,0.634,,,,,with augmentations
+C3,classification,STL10,42,ResNet18 (pretrained),Adam,0.001,15,0.949,,,,,"head-only, no augmentations"
+C4,classification,STL10,42,ResNet18 (pretrained),Adam,"layer4:1e-4, fc:1e-3",15,0.954,0.75725,,,,partial fine-tune with augmentations
+V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,0,,,0.7160842610011455,0.9631066493520499,0.7012121341638623,threshold=0.3
+V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,0,,,0.7916286479176867,0.930801148463609,0.7592271289644092,"threshold=0.7, postprocess=remove_small_components"
+V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,0,,,0.7160842610011455,0.9631066493520499,0.7012121341638623,threshold=0.3
+V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,-,-,0,,,0.7916286479176867,0.930801148463609,0.7592271289644092,"threshold=0.7, postprocess=remove_small_components"

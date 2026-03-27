@@ -1,0 +1,8 @@
+{
+  "dataset": "STL10",
+  "model": "ResNet18 (pretrained)",
+  "transforms": "transform_resnet_aug",
+  "epochs": 15,
+  "lr": "layer4:1e-4, fc:1e-3",
+  "seed": 42
+}
