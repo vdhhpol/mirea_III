@@ -1,5 +1,5 @@
 experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
-B1,forecasting,S12-hw-dataset.csv,42,70/15/15,,1,naive-last,none,none,none,,,6.438500772797526,8.196911140247455,4.391461399335978,,,,
-B2,forecasting,S12-hw-dataset.csv,42,70/15/15,,1,moving_avg_7,none,none,none,,,12.711450858034322,15.23540424431928,8.817813328434196,,,,
-B3,forecasting,S12-hw-dataset.csv,42,70/15/15,,1,Ridge,"lags_1_7_14,roll_7_14,calend",StandardScaler,none,,,6.028241029856692,7.504285840181336,4.008268733212478,,,,
-R1,forecasting,S12-hw-dataset.csv,42,70/15/15,24,1,GRU,window_24,StandardScaler,Adam,0.001,50,5.493564128875732,,,6.862240314483643,8.813776451355722,4.423669,"hidden_size=32, num_layers=1, window=24"
+B1,forecasting,S12-hw-dataset.csv,42,temporal split 70/15/15,,1,naive-last,none,none,none,,,6.438500772797526,8.196911140247455,4.391461399335978,,,,
+B2,forecasting,S12-hw-dataset.csv,42,temporal split 70/15/15,,1,moving_avg_7,none,none,none,,,12.711450858034322,15.23540424431928,8.817813328434196,,,,
+B3,forecasting,S12-hw-dataset.csv,42,temporal split 70/15/15,,1,Ridge,"lag_1, lag_7, lag_14, rolling_mean_7, rolling_std_7, rolling_mean_14, rolling_std_14, dayofweek, month, dayofyear, dow_sin, dow_cos",StandardScaler,none,,,6.028241029856692,7.504285840181336,4.008268733212478,,,,
+R1,forecasting,S12-hw-dataset.csv,42,temporal split 70/15/15,24,1,GRU,window_24,StandardScaler,Adam,0.001,50,5.493564128875732,7.479606877568416,3.8959596,6.862240314483643,8.813776451355722,4.423669,"hidden_size=32, num_layers=1, window=24"
