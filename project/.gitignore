@@ -1,0 +1,27 @@
+# секреты и конфигурации
+.env
+configs/.env
+*.env
+
+# артефакты модели (бинарные файлы)
+artifacts/*.pkl
+artifacts/*.npy
+artifacts/*.keras
+artifacts/*.png
+
+# обработанные данные (генерируются)
+data/processed/
+data/raw/
+
+# MLflow
+notebooks/mlflow.db
+notebooks/mlruns/
+
+# временные файлы Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# логи
+*.log
