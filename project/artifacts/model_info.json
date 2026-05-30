@@ -1,0 +1,8 @@
+{
+  "selected_model": "LightGBM",
+  "mlp_threshold": 0.6474284529685974,
+  "models_path": {
+    "LightGBM": "../artifacts/best_model.pkl",
+    "MLP": "../artifacts/mlp_model_best.keras"
+  }
+}
