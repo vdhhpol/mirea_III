@@ -10,8 +10,8 @@ artifacts/*.keras
 artifacts/*.png
 
 # обработанные данные (генерируются)
-data/processed/
-data/raw/
+data/raw/*.csv
+data/processed/*.csv
 
 # MLflow
 notebooks/mlflow.db
