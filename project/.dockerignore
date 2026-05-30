@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+.venv
+venv
+.env
+.git
+.gitignore
+*.ipynb
+notebooks/
+data/
+*.pkl
+*.npy
+*.keras
+mlruns/
+mlflow.db
+*.log
